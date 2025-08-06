@@ -1,0 +1,5 @@
+{
+  "name": "smart-translator",
+  "description": "영어 입력 시 자동 한국어 번역, 영어가 아니면 원문 그대로 반환",
+  "trigger": "text"
+}
