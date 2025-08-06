@@ -11,7 +11,7 @@ def webhook():
     if not text:
         return jsonify({"result": ""})
 
-    # 영어면 한국어로, 아니면 원문 그대로
+    # 영어면 한국어로 번역, 아니면 원문 그대로
     src_lang = translator.detect(text).lang
     if src_lang == "en":
         result = translator.translate(text, src='en', dest='ko').text
